@@ -27,5 +27,4 @@
         name="Readable Text"
         sequence="1"
         groups="base.group_user"/>
-
 </odoo>

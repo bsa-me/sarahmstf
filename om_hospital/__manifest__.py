@@ -8,7 +8,10 @@
     'category':'productivity',
     'website':"https://www.odoomates.tech",
     'depends':[],
-   'data':[],
+   'data':[
+       'security/ir.model.access.csv',
+       'views/sara.xml'
+   ],
   'demo' :[] ,
   'qweb' :[]  ,
 
