@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access.school.profile,access_school.profile,om_hospital.model_school.profile,base.group_user,1,1,1,1
+access.school.profile,access_school_profile,om_hospital.model_school_profile,base.group_user,1,1,1,1
