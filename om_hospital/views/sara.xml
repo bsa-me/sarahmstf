@@ -5,12 +5,16 @@
         <field name="name">view.school.model.form</field>
         <field name="model">school.profile</field>
         <field name="arch" type="xml">
-            <form>
-                <field name="name"/>
-                <field name="email"/>
-                <field name="phone"/>
-                <field name="age"/>
-            </form>
+            <sheet>
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="age"/>
+                    </group>
+                </form>
+            </sheet>
         </field>
     </record>
 
