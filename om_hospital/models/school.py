@@ -7,3 +7,4 @@ class schoolprofile(models.Model):
     name=fields.Char(string="school Name")
     email=fields.Char(string="Email")
     phone=fields.Char("phone")
+    age=fields.Integer("age")
