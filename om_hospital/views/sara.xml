@@ -30,15 +30,12 @@
         </field>
     </record> -->
 
-    <!-- Action Menu Item Related To Above Action Window -->
     <menuitem id="school_profile_main_menu"
               name="School Profile"
               sequence="1"/>
     <menuitem
             id="school_profile_menu"
             name="Readable Text"
-<!--             action="action_school_profile" -->
             parent="school_profile_main_menu"
             sequence="1"/>
-    <!--        groups="base.group_user"/>-->
 </odoo>
