@@ -1,3 +1,4 @@
+<odoo>
 <record id ="school_model" model="ir.ui.view">
     <field name="name">school.profile</field>
     <field name="model">school.profile</field>
@@ -8,5 +9,22 @@
             <field name="phone"/>
             <field name="age"/>
         </form>
-    </field>
+        !-- Your Action Window Definition -->
 </record>
+
+
+<record id="action_123" model="ir.actions.act_window">
+    <field name="name">school.profile</field>
+    <field name="res_model">school.profile</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<!-- Action Menu Item Related To Above Action Window -->
+<menuitem
+        action="action_123"
+        id="action_menu_123"
+        name="Readable Text"
+        sequence="1"/>
+
+</odoo>
