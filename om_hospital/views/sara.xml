@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <odoo>
-    <record id="view_school_model_form" model="ir.ui.view">
+<!--     <record id="view_school_model_form" model="ir.ui.view">
         <field name="name">view.school.model.form</field>
         <field name="model">school.profile</field>
         <field name="arch" type="xml">
@@ -16,7 +16,7 @@
                 </form>
             </sheet>
         </field>
-    </record>
+    </record> -->
 
 
     <record id="action_school_profile" model="ir.actions.act_window">
