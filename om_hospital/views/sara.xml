@@ -19,7 +19,7 @@
     </record> -->
 
 
-    <record id="action_school_profile" model="ir.actions.act_window">
+<!--     <record id="action_school_profile" model="ir.actions.act_window">
         <field name="name">school.profile</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">school.profile</field>
@@ -28,7 +28,7 @@
         <field name="help" type="html">
             Create your first School Profile!
         </field>
-    </record>
+    </record> -->
 
     <!-- Action Menu Item Related To Above Action Window -->
     <menuitem id="school_profile_main_menu"
@@ -37,7 +37,7 @@
     <menuitem
             id="school_profile_menu"
             name="Readable Text"
-            action="action_school_profile"
+<!--             action="action_school_profile" -->
             parent="school_profile_main_menu"
             sequence="1"/>
     <!--        groups="base.group_user"/>-->
