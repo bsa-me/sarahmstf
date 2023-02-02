@@ -20,7 +20,7 @@
 
 
     <record id="action_school" model="ir.actions.act_window">
-        <field name="name">action.school</field>
+        <field name="name">School</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">school.profile</field>
         <field name="view_mode">tree,form</field>
