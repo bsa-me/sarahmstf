@@ -19,8 +19,8 @@
     </record> -->
 
 
-    <record id="action_school_profile" model="ir.actions.act_window">
-        <field name="name">school.profile</field>
+    <record id="action_school" model="ir.actions.act_window">
+        <field name="name">action.school</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">school.profile</field>
         <field name="view_mode">tree,form</field>
@@ -36,7 +36,7 @@
     <menuitem
             id="school_profile_menu"
             name="Readable Text"
-            action = "action_school_profile"
+            action = "action_school"
             parent="school_profile_main_menu"
             sequence="1"/>
 </odoo>
