@@ -1,7 +1,7 @@
 from odoo import fields, models, api
 
 
-class schoolprofile(models,Model):
+class schoolprofile(models.Model):
     _name="school.profile"
 
     name=fields.Char(string="school Name")
