@@ -1,21 +1,20 @@
-#-*-coding: utf-8-*-
+# -*-coding: utf-8-*-
 {
-    'name':'Hospital Management',
+    'name': 'Hospital Management',
     'Version': '1.0.0',
     'summary': 'Hospital Management software',
     'sequence': 100,
-    'description':"""Hospital Management software""",
-    'category':'productivity',
-    'website':"https://www.odoomates.tech",
-    'depends':[],
-   'data':[
-       'security/ir.model.access.csv',
-       'views/sara.xml'
-   ],
-  'demo' :[] ,
-  'qweb' :[]  ,
-
-  'installation' :True,
-  'application':True,
-'auto_install' :False,
+    'description': """Hospital Management software""",
+    'category': 'productivity',
+    'website': "https://www.odoomates.tech",
+    'depends': [],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/sara.xml',
+    ],
+    'demo': [],
+    'qweb': [],
+    'installation': True,
+    'application': True,
+    'auto_install': False,
 }

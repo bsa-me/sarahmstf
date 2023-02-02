@@ -1,31 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <odoo>
-<record id ="school_model" model="ir.ui.view">
-    <field name="name">school.profile</field>
-    <field name="model">school.profile</field>
-    <field name="arch" type="xml">
-        <form>
-            <field name="name"/>
-            <field name="email"/>
-            <field name="phone"/>
-            <field name="age"/>
-        </form>
-    </field>
-        !-- Your Action Window Definition -->
-</record>
+    <record id="view_school_model_form" model="ir.ui.view">
+        <field name="name">view.school.model.form</field>
+        <field name="model">school.profile</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="age"/>
+            </form>
+        </field>
+    </record>
 
 
-<record id="action_123" model="ir.actions.act_window">
-    <field name="name">school.profile</field>
-    <field name="res_model">school.profile</field>
-    <field name="view_type">form</field>
-    <field name="view_mode">tree,form</field>
-</record>
+    <record id="action_school_profile" model="ir.actions.act_window">
+        <field name="name">school.profile</field>
+        <field name="type">"ir.actions.act_window</field>
+        <field name="res_model">school.profile</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            Create your first School Profile!
+        </field>
+    </record>
 
-<!-- Action Menu Item Related To Above Action Window -->
-<menuitem
-        action="action_123"
-        id="action_menu_123"
-        name="Readable Text"
-        sequence="1"
-        groups="base.group_user"/>
+    <!-- Action Menu Item Related To Above Action Window -->
+    <menuitem id="school_profile_main_menu"
+              name="School Profile"
+              sequence="1"/>
+    <menuitem
+            id="school_profile_menu"
+            name="Readable Text"
+            action="action_school_profile"
+            parent="school_profile_main_menu"
+            sequence="1"/>
+    <!--        groups="base.group_user"/>-->
 </odoo>
