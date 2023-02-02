@@ -9,6 +9,7 @@
             <field name="phone"/>
             <field name="age"/>
         </form>
+    </field>
         !-- Your Action Window Definition -->
 </record>
 
