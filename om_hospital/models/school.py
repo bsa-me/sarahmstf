@@ -18,13 +18,12 @@ class SchoolProfile(models.Model):
     @api.depends('age')
     def _compute_is_teenager(self):
         for record in self :
-            if record.age<20 :
+            if record.age<20:
                  record.is_teenager ='Teenager'
-            else:
-                 record.is_teenager='Not a Teenager'
-        else if record.age>=20 and record.age<=50:
+
+            elif record.age>=20 and record.age<=50 :
                 record.is_teenager='Adult'
-        else:
+            else:
                record.is_teenager='5etyar'
 
 
