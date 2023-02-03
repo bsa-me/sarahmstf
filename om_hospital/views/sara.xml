@@ -16,6 +16,8 @@
                         <field name="gender_type"/>
                         <field name="date_of_birth"/>
                         <field name="is_teenager"/>
+                        <field name="your_button_field" type="char" string="Button Title"/>
+                        <button name="your_button_action" string="Button Title" type="object" class="oe_highlight"/>
 
                     </group>
                 </sheet>

@@ -15,6 +15,7 @@ class SchoolProfile(models.Model):
     date_of_birth = fields.Date(string='Date_of_Birth')
     is_teenager =fields.Char(string="Teenager?",compute='_compute_is_teenager')
 
+
     @api.depends('age')
     def _compute_is_teenager(self):
         for record in self :
@@ -25,7 +26,10 @@ class SchoolProfile(models.Model):
                 record.is_teenager='Adult'
             else:
                record.is_teenager='5etyar'
-
+    @api.multi
+    def your_button_action(self):
+        #write your button action code here
+        return true
 
 
 
