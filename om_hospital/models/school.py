@@ -9,8 +9,7 @@ class SchoolProfile(models.Model):
     phone = fields.Char("phone")
     age = fields.Integer("age")
     open_date= fields.datetime("Open Date")
-    school_type=fields.selection([('public',public School'),('private',private School')],string="Type of School",
-                                 help='please select School Type',default='private')
+    school_type=fields.selection([('public',public School'),('private',private School')],string="Type of School,")
 
 
 
