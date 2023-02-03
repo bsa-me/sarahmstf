@@ -16,6 +16,7 @@
                         <field name="gender_type"/>
                         <field name="date_of_birth"/>
                         <field name="is_teenager"/>
+                        <field name="age_status"/>
                     </group>
                 </sheet>
             </form>
