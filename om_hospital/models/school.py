@@ -26,10 +26,9 @@ class SchoolProfile(models.Model):
                 record.is_teenager='Adult'
             else:
                record.is_teenager='5etyar'
-    
+
     def your_button_action(self):
-        #write your button action code here
-        return True
+        print("hi")
 
 
 
