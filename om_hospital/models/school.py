@@ -29,7 +29,7 @@ class SchoolProfile(models.Model):
     @api.multi
     def your_button_action(self):
         #write your button action code here
-        return true
+        return True
 
 
 
