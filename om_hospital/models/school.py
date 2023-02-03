@@ -12,7 +12,7 @@ class SchoolProfile(models.Model):
     age = fields.Integer( string="age")
     open_date = fields.Datetime("Open Date")
     gender_type = fields.Selection([('male', 'Male'), ('female', 'Female')], string="Gender")
-    date of birth = fields.Date(string='Date of Birth')
+    date_of_birth = fields.Date(string='Date_of_birth')
     is_teenager =fields.Char(string="Teenager?",compute='_compute_is_teenager')
     @api.depends('age')
     def _compute_is_teenager(self):
