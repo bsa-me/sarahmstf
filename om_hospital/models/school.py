@@ -22,7 +22,7 @@ class SchoolProfile(models.Model):
                  record.is_teenager ='Teenager'
             else:
                  record.is_teenager='Not a Teenager'
-        else if record.age>=20 and record.age<=50 
+        else if record.age>=20 and record.age<=50 ':'
                 record.is_teenager='Adult'
         else:
                record.is_teenager='5etyar'
