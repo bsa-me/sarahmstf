@@ -1,5 +1,5 @@
-  from datetime import date
-  from odoo import fields, models, api
+from datetime import date
+from odoo import fields, models, api
 
 
 
@@ -12,7 +12,7 @@ class SchoolProfile(models.Model):
     age = fields.Integer( string="age")
     open_date = fields.Datetime("Open Date")
     gender_type = fields.Selection([('male', 'Male'), ('female', 'Female')], string="Gender")
-    date_of_birth = fields.Date(string='Date_of_birth')
+    date_of_birth = fields.Date(string='Date_of_Birth')
     is_teenager =fields.Char(string="Teenager?",compute='_compute_is_teenager')
     @api.depends('age')
     def _compute_is_teenager(self):
