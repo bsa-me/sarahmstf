@@ -8,8 +8,8 @@ class SchoolProfile(models.Model):
     email = fields.Char(string="Email")
     phone = fields.Char("phone")
     age = fields.Integer("age")
-    open_date= fields.datetime("Open Date")
-    school_type=fields.selection([('public',public School'),('private',private School')],string="Type of School,")
+    open_date= fields.Datetime("Open Date")
+    gender_type=fields.Selection([('male', 'Male'), ('female', 'Female')], string="Gender")
 
 
 
