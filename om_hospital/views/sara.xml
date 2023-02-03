@@ -13,7 +13,7 @@
                         <field name="phone"/>
                         <field name="age"/>
                         <field name="open_date"/>
-                        <field name="school_type" string="School Type"/>
+                        <field name="gender_type"/>
                     </group>
                 </form>
             </sheet>
@@ -44,5 +44,5 @@
             action="action_school"
             parent="school_profile_main_menu"
             sequence="1"/>
-    <!--        groups="base.group_user"/>-->
+    
 </odoo>
