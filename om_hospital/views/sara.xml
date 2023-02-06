@@ -18,6 +18,9 @@
                         <field name="is_teenager"/>
                         <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
                         <field name ="is_virtual_class" string="This is override field." readonly="0"/>
+                        <field name ="school_rank"/>
+                        <field name ="result" string="School Result"/>
+                        <field name="address"/>
                     </group>
                 </sheet>
             </form>

@@ -14,9 +14,18 @@ class SchoolProfile(models.Model):
     gender_type = fields.Selection([('male', 'Male'), ('female', 'Female')], string="Gender")
     date_of_birth = fields.Date(string='Date_of_Birth')
     is_teenager =fields.Char(string="Teenager?",compute='_compute_is_teenager')
-    is_virtual_class= fields.Boolean(string="Virtual Class Support?",readonly=True)
-                                                                       
-    
+    is_virtual_class= fields.Boolean(string="Virtual Class Support?",readonly="True")
+
+    school_rank=fields.Integer(string="Rank")
+    result=fields.Float(string="Result")
+    address=fields.Text(string="Address",help="This is school permenet address,")
+
+
+
+
+
+
+
 
     @api.depends('age')
     def _compute_is_teenager(self):
