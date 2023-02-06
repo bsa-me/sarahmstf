@@ -17,7 +17,7 @@ class SchoolProfile(models.Model):
     is_virtual_class= fields.Boolean(string="Virtual Class Support?",help="This is boolean flag which will "help you
                                                                            to see virtual class " support or not .",
                                                                        readonly=True)
-    "")
+    
 
     @api.depends('age')
     def _compute_is_teenager(self):
