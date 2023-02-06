@@ -17,7 +17,7 @@
                         <field name="date_of_birth"/>
                         <field name="is_teenager"/>
                         <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
-                        <field name ="is_virtual-class"/>
+                        <field name ="is_virtual_class"/>
                     </group>
                 </sheet>
             </form>
