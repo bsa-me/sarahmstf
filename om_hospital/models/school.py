@@ -21,6 +21,9 @@ class SchoolProfile(models.Model):
     address=fields.Text(string="Address")
     documents= fields.Binary(string="Documents")
     document_name=fields.Char(string="File Name")
+    currency_id=fields.Many2one("res.currency",string="currency")
+    student_fees= fields.Monetary(string="Student Fees")
+    total_fees=fields.Float(string="Total Fees")
 
 
 
