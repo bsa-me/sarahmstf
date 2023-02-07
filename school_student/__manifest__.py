@@ -10,7 +10,7 @@
     'depends': [],
     'data': [
         'security/ir.model.access.csv',
-        'views/sara.xml',
+        'views/templates.xml',
     ],
     'demo': [],
     'qweb': [],
