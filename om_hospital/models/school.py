@@ -19,6 +19,10 @@ class SchoolProfile(models.Model):
     school_rank=fields.Integer(string="Rank")
     result=fields.Float(string="Result")
     address=fields.Text(string="Address",help="This is school permenet address,")
+    documents= fields.Binary(string="Documents", help="This is documents"
+                                                      "upload option .",readonly=True)
+    document_name=fields.Char(string="File Name")
+
 
 
 

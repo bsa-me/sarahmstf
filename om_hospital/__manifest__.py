@@ -1,4 +1,5 @@
 # -*-coding: utf-8-*-
+
 {
     'name': 'Hospital Management',
     'Version': '1.0.0',

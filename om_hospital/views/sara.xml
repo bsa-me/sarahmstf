@@ -8,19 +8,28 @@
             <form>
                 <sheet>
                     <group>
+                        <group>
                         <field name="name"/>
-                        <field name="email"/>
+                        <field name="email" placeholder="abc@gmail.com"/>
                         <field name="phone"/>
                         <field name="age"/>
                         <field name="open_date"/>
                         <field name="gender_type"/>
                         <field name="date_of_birth"/>
+
+                        </group>
+                        <group>
                         <field name="is_teenager"/>
                         <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
                         <field name ="is_virtual_class" string="This is override field." readonly="0"/>
                         <field name ="school_rank"/>
                         <field name ="result" string="School Result"/>
                         <field name="address"/>
+                    </group>
+                    </group>
+                    <group>
+                    <field name="documents" filename="document_name" />
+                     <field name="document_name"  />
                     </group>
                 </sheet>
             </form>
@@ -40,7 +49,6 @@
             </p>
         </field>
     </record>
-
     <menuitem id="school_profile_main_menu"
               name="School Profile"
               sequence="1"/>
@@ -53,3 +61,6 @@
             sequence="1"/>
     <!--        groups="base.group_user"/>-->
 </odoo>
+
+
+
