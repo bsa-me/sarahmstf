@@ -2,39 +2,39 @@
 <odoo>
     <data>
         <record model="ir.ui.view" id="school_student_list">
-            <field name="name">school.student.list</field>
-            <field name="model">school.student</field>
+            <field name="name">schools.student.list</field>
+            <field name="model">schools.student</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="school_id" string="School"/>
+                    <field name="schools_id" string="Schools"/>
                 </tree>
             </field>
         </record>
-        <record model="ir.ui.view" id="school_student_form">
-            <field name="name">school.student.form</field>
-            <field name="model">school.student</field>
+        <record model="ir.ui.view" id="schools_student_form">
+            <field name="name">schools.student.form</field>
+            <field name="model">schools.student</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
                         <group>
                         <field name="name"/>
-                        <field name="school_id" string="School"/>
+                        <field name="schools_id" string="Schools"/>
                         </group>
                     </group>
                 </form>
             </field>
         </record>
-        <record model="ir.action.act_window" id="school_student.action_window">
-            <field name="name">school.student.window</field>
-            <field name="res_model">school.student</field>
+        <record model="ir.action.act_window" id="schools_student.action_window">
+            <field name="name">schools.student.window</field>
+            <field name="res_model">schools.student</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem name="school_student" id="school_student.menu_root"/>
-        <menuitem name="Menu 1" id="school_student.menu_1" parent="school_student.menu_root"/>
-        <menuitem name="Menu 2" id="school_student.menu_2" parent="school_student.menu_root"/>
-        <menuitem name="List" id="school_student.menu_1_list" parent="school_student.menu_1" action="school_student.action_window"/>
+        <menuitem name="schools_student" id="schools_student.menu_root"/>
+        <menuitem name="Menu 1" id="schools_student.menu_1" parent="schools_student.menu_root"/>
+        <menuitem name="Menu 2" id="schools_student.menu_2" parent="schools_student.menu_root"/>
+        <menuitem name="List" id="schools_student.menu_1_list" parent="schools_student.menu_1" action="schools_student.action_window"/>
 
 
     </data>

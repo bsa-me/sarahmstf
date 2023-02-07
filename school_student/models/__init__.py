@@ -1,1 +1,1 @@
-from. import schools
+from . import students
