@@ -10,11 +10,11 @@ class school_student(models.Model):
     schools_id = fields.Many2one("school.profile", string="Schools Name")
     phone = fields.Char("phone")
     stage = fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')
-    child_ids = fields.One2many('child.model', 'parent_id', string='Children')
+    child_ids = fields.One2many('schools.model', 'parent_id', string='Children')
 
     def approve_button(self):
         self.ensure_one()
-        self.stage='approved'
+        self.stage = 'approved'
 
     def sell_button(self):
         self.ensure_one()
