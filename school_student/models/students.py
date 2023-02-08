@@ -7,7 +7,13 @@ class school_student(models.Model):
     name=fields.Char()
     schools_id=fields.Many2one("school.profile", string="Schools Name")
     phone=fields.Char("phone")
-    stage= fields.Selection([('pending','Pending'),('approved','Approved'),],default='pending',string='Stage')
+    stage= fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')
     def approve_button(self):
         self.ensure_one()
         self.stage='approved'
+    def sell_button(self):
+        self.ensure_one()
+        self.stage = 'sold'
+    def cancel_button(self):
+        self.ensure_one()
+        self.stage = 'cancelled'

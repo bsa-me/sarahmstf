@@ -8,11 +8,12 @@
                 <form>
                     <group>
                         <group>
-                        <field name="name"/>
-                        <field name="schools_id" string="Schools"/>
-                        <field name="phone" />
-                        <field name="stage" />
-                        <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
+                          <field name="name"/>
+                          <field name="schools_id" string="Schools"/>
+                          <field name="phone" />
+                          <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
+                          <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
+                          <button name="cancel_button" string="Cancel" type="object" class="btn-primary"/>
                     </group>
                 </form>
             </field>
