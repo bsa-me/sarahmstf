@@ -12,8 +12,6 @@
                             <field name="schools_id" string="Schools"/>
                             <field name="phone"/>
                             <field name="stage"/>
-                            <field name="number" type="integer"/>
-                            <field name="price" type="float"/>
                             <field name="child_ids">
                                 <tree>
                                     <field name="number" />
