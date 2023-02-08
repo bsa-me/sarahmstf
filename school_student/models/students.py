@@ -26,12 +26,11 @@ class school_student(models.Model):
 
 
 class ChildModel(models.Model):
-   _name = 'schools.model'
+    _name = 'schools.model'
 
-   name = fields.Char(string='name')
-   price = fields.Float(string='price')
-   number = fields.Integer(string='Number')
-   parent_id = fields.Many2one('schools.student',string='parent')
+    price = fields.Float(string='price')
+    number = fields.Integer(string='Number')
+    parent_id = fields.Many2one('schools.student', string='parent')
 
    # class ParentModel(models.Model):
    #     _name ='parent.model'
