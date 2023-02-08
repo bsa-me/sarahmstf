@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.schools.student,access_schools_student,school_student.model_schools_student,base.group_user,1,1,1,1
+access.schools.model,access_schools_model,school_student.model_schools_model,base.group_user,1,1,1,1

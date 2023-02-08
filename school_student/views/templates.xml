@@ -5,7 +5,12 @@
             <field name="name">schools.student.form</field>
             <field name="model">schools.student</field>
             <field name="arch" type="xml">
-                <form>
+               <form>
+                    <header>
+                        <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
+                        <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
+                        <button name="cancel_button" string="Cancel" type="object" class="btn-primary"/>
+                    </header>
                     <sheet>
                         <group>
                             <field name="name"/>
@@ -13,16 +18,14 @@
                             <field name="phone"/>
                             <field name="stage"/>
                             <field name="child_ids">
-                                <tree>
-                                    <field name="number" />
+                                <tree editable="bottom">
+                                    <field name="number"/>
                                     <field name="price"/>
+                                    <field name="parent_id"/>
+
                                 </tree>
                             </field>
-                            <header>
-                                <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
-                                <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
-                                <button name="cancel_button" string="Cancel" type="object" class="btn-primary"/>
-                            </header>
+
                         </group>
                     </sheet>
                 </form>

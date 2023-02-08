@@ -32,7 +32,3 @@ class ChildModel(models.Model):
     number = fields.Integer(string='Number')
     parent_id = fields.Many2one('schools.student', string='parent')
 
-   # class ParentModel(models.Model):
-   #     _name ='parent.model'
-   #
-   #     name = field.Char(string='name')
