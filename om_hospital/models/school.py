@@ -5,7 +5,6 @@ from odoo import fields, models, api
 
 class SchoolProfile(models.Model):
     _name = "school.profile"
-
     name = fields.Char(string="school Name")
     email = fields.Char(string="Email")
     phone = fields.Char("phone")
@@ -16,7 +15,7 @@ class SchoolProfile(models.Model):
     is_teenager =fields.Char(string="Teenager?",compute='_compute_is_teenager')
     is_virtual_class= fields.Boolean(string="Virtual Class Support?",readonly="True")
 
-    school_rank=fields.Integer(string="Rank")
+    school_rank=fields.Integer(string="Rank",help="test sara's skills")
     result=fields.Float(string="Result")
     address=fields.Text(string="Address")
     documents= fields.Binary(string="Documents")
@@ -25,13 +24,9 @@ class SchoolProfile(models.Model):
     student_fees= fields.Monetary(string="Student Fees")
     total_fees=fields.Float(string="Total Fees")
 
+     def your_button_action(self):
 
-
-
-
-
-
-
+         self.write({'your_button_action"':'done with this'})
 
     @api.depends('age')
     def _compute_is_teenager(self):
