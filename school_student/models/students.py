@@ -8,7 +8,6 @@ class school_student(models.Model):
     schools_id=fields.Many2one("school.profile", string="Schools Name")
     phone=fields.Char("phone")
     stage= fields.Selection([('pending','Pending'),('approved','Approved'),],default='pending',string='Stage')
-    @api.multi
     def approve_button(self):
         self.ensure_one()
         self.stage='approved'
