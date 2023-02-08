@@ -12,6 +12,9 @@
                           <field name="schools_id" string="Schools"/>
                           <field name="phone" />
                           <field name="stage" />
+                          <field name="number" type="integer"/>
+                          <field name="price" type="float"/>
+                          <field name="child_ids"/>
                     <header>
                           <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
                           <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
