@@ -10,7 +10,9 @@
                         <group>
                         <field name="name"/>
                         <field name="schools_id" string="Schools"/>
-                        </group>
+                        <field name="phone" />
+                        <field name="stage" />
+                        <button name="approve_button" string="Approve" type="object" class="btn-primary"/>
                     </group>
                 </form>
             </field>
