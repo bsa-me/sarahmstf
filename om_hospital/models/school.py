@@ -24,10 +24,6 @@ class SchoolProfile(models.Model):
     student_fees= fields.Monetary(string="Student Fees")
     total_fees=fields.Float(string="Total Fees")
 
-     def your_button_action(self):
-
-         self.write({'your_button_action"':'done with this'})
-
     @api.depends('age')
     def _compute_is_teenager(self):
         for record in self :
