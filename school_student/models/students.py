@@ -13,13 +13,14 @@ class school_student(models.Model):
     child_ids = fields.One2many('schools.model', 'parent_id', string='Checkbox')
     total_price = fields.Float(string='Total Price')
     division = fields.Float(string='Division')
+
     def approve_button(self):
         self.ensure_one()
         self.stage = 'approved'
         for record in self:
-            for i in range(5)
-            division_amount = record.total_price / record.division
-            print("Iteration",i,":",record.total_price,"divided by",record.division,"is",division_amount)
+            for i in range(5):
+                division_amount = record.total_price / record.division
+            print("Iteration", i, ":", record.total_price, "divided by", record.division, "is", division_amount)
             record.child_ids.create({'amount': division_amount,
                                      'parent_id': record.id})
 
