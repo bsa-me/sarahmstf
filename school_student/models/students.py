@@ -33,8 +33,9 @@ class school_student(models.Model):
     def cancel_button(self):
         self.ensure_one()
         self.stage = 'cancelled'
-        for i in self.child_ids:
-        line.unlink()
+        for line in self.child_ids:
+
+            line.unlink()
 
 
 class ChildModel(models.Model):
