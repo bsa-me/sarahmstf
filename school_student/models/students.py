@@ -19,7 +19,7 @@ class school_student(models.Model):
         for record in self:
             for i in range(5)
             division_amount = record.total_price / record.division
-            print("Iteration",i,":"record.total_price,"divided by",record.division,"is",division_amount)
+            print("Iteration",i,":",record.total_price,"divided by",record.division,"is",division_amount)
             record.child_ids.create({'amount': division_amount,
                                      'parent_id': record.id})
 
