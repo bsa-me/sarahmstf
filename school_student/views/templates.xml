@@ -17,11 +17,14 @@
                             <field name="schools_id" string="Schools"/>
                             <field name="phone"/>
                             <field name="stage"/>
+                            <field name="total_price"/>
+                            <field name="division"/>
                             <field name="child_ids">
                                 <tree editable="bottom">
                                     <field name="number"/>
                                     <field name="price"/>
                                     <field name="parent_id" invisible="1"/>
+                                    <field name="amount"/>
 
                                 </tree>
                             </field>

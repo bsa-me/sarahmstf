@@ -19,7 +19,7 @@ class school_student(models.Model):
         for record in self:
             division_amount = record.total_price / record.division
             for line in record.child_ids:
-                line.update({'amount': division_amount})
+                line.create({'amount': division_amount})
 
     def sell_button(self):
         self.ensure_one()
