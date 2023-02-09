@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <odoo>
+      <record id="view_school_model_list" model="ir.ui.view">
+        <field name="name">view.school.model.list</field>
+        <field name="model">school.profile</field>
+        <field name="arch" type="xml">
+            <tree>
+                        <field name="name"/>
+                        <field name="currency_id"/>
+                        <field name="email" placeholder="abc@gmail.com"/>
+                        <field name="phone"/>
+                        <field name="age"/>
+                        <field name="open_date"/>
+                        <field name="gender_type"/>
+                        <field name="date_of_birth"/>
+                        <field name="student_fees"/>
+                        <field name="total_fees" widget="monetary"/>
+                        <field name="is_teenager"/>
+                        <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
+                        <field name ="is_virtual_class" string="This is override field." readonly="0"/>
+                        <field name ="school_rank"/>
+                        <field name ="result" string="School Result"/>
+                        <field name="address"/>
+                    <field name="documents" filename="document_name" />
+                     <field name="document_name"  />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_school" model="ir.actions.act_window">
+        <field name="name">School</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">school.profile</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first School Profile!
+            </p>
+        </field>
+    </record>
     <record id="view_school_model_form" model="ir.ui.view">
         <field name="name">view.school.model.form</field>
         <field name="model">school.profile</field>
