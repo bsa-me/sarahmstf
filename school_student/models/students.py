@@ -10,7 +10,7 @@ class school_student(models.Model):
     schools_id = fields.Many2one("school.profile", string="Schools Name")
     phone = fields.Char("phone")
     stage = fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')
-    child_ids = fields.One2many('schools.model', 'parent_id', string='Children')
+    child_ids = fields.One2many('schools.model', 'parent_id', string='Checkbox')
     total_price = fields.Float(string='Total Price')
     division = fields.Float(string='Division')
     def approve_button(self):
@@ -37,3 +37,4 @@ class ChildModel(models.Model):
     number = fields.Integer(string='Number')
     parent_id = fields.Many2one('schools.student', string='parent')
     amount = fields.Float(string='Amount')
+    is_selected = fields.Boolean(string='Selected')

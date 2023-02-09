@@ -25,6 +25,7 @@
                                     <field name="price"/>
                                     <field name="parent_id" invisible="1"/>
                                     <field name="amount"/>
+                                    <field name="is_selected"/>
 
                                 </tree>
                             </field>
