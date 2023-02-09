@@ -30,7 +30,7 @@ class school_student(models.Model):
         self.stage = 'sold'
         for line in self.child_ids:
 
-        line.is_selected = True
+            line.is_selected = True
 
     def cancel_button(self):
         self.ensure_one()
