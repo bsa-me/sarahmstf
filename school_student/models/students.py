@@ -28,7 +28,9 @@ class school_student(models.Model):
     def sell_button(self):
         self.ensure_one()
         self.stage = 'sold'
-        self.is_selected = True
+        for line in self.child_ids:
+
+        line.is_selected = True
 
     def cancel_button(self):
         self.ensure_one()
