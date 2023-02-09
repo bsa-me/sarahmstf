@@ -18,8 +18,8 @@ class school_student(models.Model):
         self.stage = 'approved'
         for record in self:
             division_amount = record.total_price / record.division
-            for line in record.child_ids:
-                line.create({'amount': division_amount})
+            record.child_ids.create({'amount': division_amount,
+                                     'parent_id': record.id})
 
     def sell_button(self):
         self.ensure_one()
