@@ -18,10 +18,9 @@ class school_student(models.Model):
         self.ensure_one()
         self.stage = 'approved'
         for record in self:
-            for i in range(5):
+            for i in range(record.division):
                 division_amount = record.total_price / record.division
-            print("Iteration", i, ":", record.total_price, "divided by", record.division, "is", division_amount)
-            record.child_ids.create({'amount': division_amount,
+                record.child_ids.create({'amount': division_amount,
                                      'parent_id': record.id})
 
 
