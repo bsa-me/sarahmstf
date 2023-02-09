@@ -11,10 +11,15 @@ class school_student(models.Model):
     phone = fields.Char("phone")
     stage = fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')
     child_ids = fields.One2many('schools.model', 'parent_id', string='Children')
-
+    total_price = fields.Float(string='Total Price')
+    division = fields.Float(string='Division')
     def approve_button(self):
         self.ensure_one()
         self.stage = 'approved'
+        for record in self:
+            division_amount = record.total_price / record.division
+            for line in record.child_ids:
+                line.update({'amount': division_amount})
 
     def sell_button(self):
         self.ensure_one()
@@ -31,4 +36,4 @@ class ChildModel(models.Model):
     price = fields.Float(string='price')
     number = fields.Integer(string='Number')
     parent_id = fields.Many2one('schools.student', string='parent')
-
+    amount = fields.Float(string='Amount')
