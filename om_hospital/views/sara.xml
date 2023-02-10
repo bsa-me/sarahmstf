@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <odoo>
-      <record id="view_school_model_list" model="ir.ui.view">
+    <record id="view_school_model_list" model="ir.ui.view">
         <field name="name">view.school.model.list</field>
         <field name="model">school.profile</field>
         <field name="arch" type="xml">
             <tree>
-                        <field name="name"/>
-                        <field name="currency_id"/>
-                        <field name="email" placeholder="abc@gmail.com"/>
-                        <field name="phone"/>
-                        <field name="age"/>
-                        <field name="open_date"/>
-                        <field name="gender_type"/>
-                        <field name="date_of_birth"/>
-                        <field name="student_fees"/>
-                        <field name="total_fees" widget="monetary"/>
-                        <field name="is_teenager"/>
-                        <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
-                        <field name ="is_virtual_class" string="This is override field." readonly="0"/>
-                        <field name ="school_rank"/>
-                        <field name ="result" string="School Result"/>
-                        <field name="address"/>
-                    <field name="documents" filename="document_name" />
-                     <field name="document_name"  />
+                <field name="name"/>
+                <field name="currency_id"/>
+                <field name="email" placeholder="abc@gmail.com"/>
+                <field name="phone"/>
+                <field name="age"/>
+                <field name="open_date"/>
+                <field name="gender_type"/>
+                <field name="date_of_birth"/>
+                <field name="student_fees"/>
+                <field name="total_fees" widget="monetary"/>
+                <field name="is_teenager"/>
+                <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
+                <field name="is_virtual_class" string="This is override field." readonly="0"/>
+                <field name="school_rank"/>
+                <field name="result" string="School Result"/>
+                <field name="address"/>
+                <field name="documents" filename="document_name"/>
+                <field name="document_name"/>
             </tree>
         </field>
     </record>
@@ -49,30 +49,31 @@
                 <sheet>
                     <group>
                         <group>
-                        <field name="name"/>
-                        <field name="currency_id"/>
-                        <field name="email" placeholder="abc@gmail.com"/>
-                        <field name="phone"/>
-                        <field name="age"/>
-                        <field name="open_date"/>
-                        <field name="gender_type"/>
-                        <field name="date_of_birth"/>
-                        <field name="student_fees"/>
-                        <field name="total_fees" widget="monetary"/>
-
+                            <field name="name"/>
+                            <field name="currency_id"/>
+                            <field name="email" placeholder="abc@gmail.com"/>
+                            <field name="phone"/>
+                            <field name="age"/>
+                            <field name="open_date"/>
+                            <field name="gender_type"/>
+                            <field name="date_of_birth"/>
+                            <field name="student_fees"/>
+                            <field name="total_fees" widget="monetary"/>
                         </group>
                         <group>
-                        <field name="is_teenager"/>
-                        <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
-                        <field name ="is_virtual_class" string="This is override field." readonly="0"/>
-                        <field name ="school_rank"/>
-                        <field name ="result" string="School Result"/>
-                        <field name="address"/>
-                    </group>
+                            <field name="is_teenager"/>
+                            <field name="is_virtual_class" string="This is override field" readonly="0"/>
+                            <field name="school_rank"/>
+                            <field name="result" string="School Result"/>
+                            <field name="address"/>
+                        </group>
                     </group>
                     <group>
-                    <field name="documents" filename="document_name" />
-                     <field name="document_name"  />
+                        <group>
+                            <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
+                            <field name="documents" filename="document_name"/>
+                            <field name="document_name"/>
+                        </group>
                     </group>
                 </sheet>
             </form>
