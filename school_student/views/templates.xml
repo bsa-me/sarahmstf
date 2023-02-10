@@ -7,7 +7,7 @@
             <field name="arch" type="xml">
                <form>
                     <header>
-                       <button name="approve_button" s tring="Approve" type="object" class="btn-primary"
+                       <button name="approve_button" string="Approve" type="object" class="btn-primary"
                                 attrs="{'invisible':[('stage','=','approved')]}"/>
                         <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
                         <button name="cancel_button" string="Cancel" type="object" class="btn-primary"/>
