@@ -14,8 +14,8 @@ class SchoolProfile(models.Model):
     is_teenager = fields.Char(string="Teenager?", compute='_compute_is_teenager')
     is_virtual_class = fields.Boolean(string="Virtual Class Support?", readonly="True")
 
-    school_rank = fields.Integer(string="Rank", help="test sara's skills")
-    result = fields.Float(string="Result")
+    school_rank = fields.Selection([('public','Public School'), ('private','Private School')], string="Type of school")
+    result = fields.Float(compute="_computr_result",string="result")
     address = fields.Text(string="Address")
     documents = fields.Binary(string="Documents")
     document_name = fields.Char(string="File Name")
@@ -39,3 +39,15 @@ class SchoolProfile(models.Model):
 
     def your_button_action(self):
         print("hi")
+
+    @api.depends('school_rank')
+    def _compute_result(self):
+        for record in self :
+            if record.school_rank =="private" :
+                record.result = 50
+            elif record.school_rank =="public" :
+                record.result = 100
+            else :
+                record.school_rank = 0
+
+
