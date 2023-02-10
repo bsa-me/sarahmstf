@@ -30,7 +30,6 @@
                                     <field name="is_selected"/>
                                 </tree>
                             </field>
-
                         </group>
                     </sheet>
                 </form>

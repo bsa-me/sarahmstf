@@ -12,7 +12,6 @@
                             <field name="division"/>
                         </group>
                     </group>
-
                     <footer>
                         <button name="approve_button" string="Approve" type="object" class="btn-primary" />
                         <button name="sell_button" string="Sell" type="object" class="btn-primary" />
