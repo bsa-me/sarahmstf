@@ -48,6 +48,6 @@ class SchoolProfile(models.Model):
             elif record.school_rank =="public" :
                 record.result = 100
             else :
-                record.school_rank = 0
+                record.result = 0
 
 
