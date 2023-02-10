@@ -16,7 +16,7 @@
                         <group>
                             <field name="name"/>
                             <field name="schools_id" string="Schools"/>
-                            <field name="phone"/>
+                            <field name="phone" attrs ="{'invisible' : [('name','=',0)],'readonly':[('name','=',1)]}"/>
                             <field name="stage"/>
                             <field name="total_price"/>
                             <field name="division"/>
