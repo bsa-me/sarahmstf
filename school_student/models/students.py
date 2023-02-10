@@ -40,7 +40,7 @@ class school_student(models.Model):
 
     def wiz_open(self):
 
-     return{'type': 'ir.action.act_window','res_model':'student.feees.update.wizard','view_mode':'form','target':'new'}
+     return{'type': 'ir.action.act_window','res_model':'student.fees.update.wizard','view_mode':'form','target':'new'}
 
 class ChildModel(models.Model):
     _name = 'schools.model'
