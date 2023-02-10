@@ -9,7 +9,7 @@
     'category': 'uncategorized',
     'author': "My Company",
     'website': "https://www.yourcompany.com",
-    'depends': ['base', 'school'],
+    'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
         'wizard/student_fees_udpdate_wizard_view.xml',
