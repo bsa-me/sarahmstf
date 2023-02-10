@@ -13,7 +13,6 @@
     'data': [
         'security/ir.model.access.csv',
         'wizard/student_fees_udpdate_wizard_view.xml',
-        'views/views.xml',
         'views/templates.xml',
     ],
     'demo': [],
