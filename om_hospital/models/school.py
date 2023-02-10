@@ -15,7 +15,7 @@ class SchoolProfile(models.Model):
     is_virtual_class = fields.Boolean(string="Virtual Class Support?", readonly="True")
 
     school_rank = fields.Selection([('public','Public School'), ('private','Private School')], string="Type of school")
-    result = fields.Float(compute="_computr_result",string="result")
+    result = fields.Float(compute='_compute_result',string="result")
     address = fields.Text(string="Address")
     documents = fields.Binary(string="Documents")
     document_name = fields.Char(string="File Name")
