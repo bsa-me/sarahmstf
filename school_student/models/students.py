@@ -13,7 +13,6 @@ class school_student(models.Model):
     child_ids = fields.One2many('schools.model', 'parent_id', string='Checkbox')
     total_price = fields.Float(string='Total Price')
     division = fields.Integer(string='Division')
-
     def approve_button(self):
         self.ensure_one()
         self.stage = 'approved'
@@ -39,6 +38,9 @@ class school_student(models.Model):
 
             line.unlink()
 
+    def wiz_open(self):
+
+     return{'type': 'ir.action.act_window','res_model':'student.feees.update.wizard','view_mode':'form','target':'new'}
 
 class ChildModel(models.Model):
     _name = 'schools.model'
