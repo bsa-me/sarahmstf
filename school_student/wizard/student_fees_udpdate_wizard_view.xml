@@ -3,14 +3,13 @@
 
         <record id="student_fees_update_form_view_wiz" model="ir.ui.view">
             <field name="name">student.fees.update.form.view.wiz</field>
-            <field name="model">student.feees.update.wizard</field>
+            <field name="model">student.fees.update.wizard</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
                         <group>
                             <field name="price" />
                             <field name="division"/>
-
                         </group>
                     </group>
 
@@ -25,7 +24,7 @@
 
         <record id="student_fees_update_action" model="ir.actions.act_window">
             <field name="name">Student Fees Update</field>
-            <field name="res_model">student.feees.update.wizard</field>
+            <field name="res_model">student.fees.update.wizard</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
