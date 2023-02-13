@@ -7,6 +7,10 @@ class StudentFeesUpdateWizard(models.TransientModel):
     price = fields.Float(string="Price")
     division = fields.Integer(string="Division")
 
+    @api.one
     def approve_button(self):
-        print("Yeah successfully click on approve_button method........")
-        return True
+        for record in self:
+            for i in range(int(record.division)):
+        division_price = self.price / self.division
+        distribution_obj = self.env['distribution.model']
+        distribution = distribution_obj.create({'amount':division_price})

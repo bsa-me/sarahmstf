@@ -13,7 +13,7 @@ class school_student(models.Model):
     child_ids = fields.One2many('schools.model', 'parent_id', string='Checkbox')
     total_price = fields.Float(string='Total Price')
     division = fields.Integer(string='Division')
-    
+
     def approve_button(self):
         self.ensure_one()
         self.stage = 'approved'
