@@ -11,6 +11,6 @@ class StudentFeesUpdateWizard(models.TransientModel):
     def approve_button(self):
         for record in self:
             for i in range(int(record.division)):
-        division_price = self.price / self.division
-        distribution_obj = self.env['schools.model']
-        distribution = distribution_obj.create({'amount':division_price})
+        division_price = record.price / record.division
+        distribution_obj = record.env['schools.model']
+        distribution = record.distribution_obj.create({'amount':division_price,'parent_id': record.id}})
