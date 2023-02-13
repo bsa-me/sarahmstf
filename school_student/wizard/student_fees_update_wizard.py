@@ -13,4 +13,4 @@ class StudentFeesUpdateWizard(models.TransientModel):
             for i in range(int(record.division)):
         student_fees_update = record.price / record.division
         distribution_obj = record.env['schools.model']
-        schools = record.distribution_obj.create({'amount':division_price,'parent_id': record.id})
+        schools = record.distribution_obj.create({'amount':student_fees_update,'parent_id': record.id})
