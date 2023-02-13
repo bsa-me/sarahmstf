@@ -12,6 +12,8 @@
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
         <record id="action_game" model="ir.actions.act_window">
             <field name="name">game</field>
             <field name="type">ir.actions.act_window</field>
