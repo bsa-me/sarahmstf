@@ -9,7 +9,7 @@
     'website': "https://www.odoomates.tech",
     'depends': ['sale'],
     'data': [
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'views/games.xml',
     ],
     'demo': [],
