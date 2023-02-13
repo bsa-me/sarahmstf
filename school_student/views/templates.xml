@@ -8,9 +8,9 @@
                <form>
                     <header>
                        <button name="approve_button" string="Approve" type="object" class="btn-primary"
-                                attrs="{'invisible':[('stage','=','approved')]}"/>
-                        <button name="sell_button" string="Sell" type="object" class="btn-primary"/>
-                        <button name="cancel_button" string="Cancel" type="object" class="btn-primary"/>
+                                attrs="{'invisible':[('stage','=','approved')]}" confirm="Are you sure you want to confirm?"/>
+                        <button name="sell_button" string="Sell" type="object" class="btn-primary" confirm="Are you sure you want to sell?"/>
+                        <button name="cancel_button" string="Cancel" type="object" class="btn-primary" confirm="Are you sure you want to cancel?"/>
                         <button name="wiz_open" string="Click me" type="object"/>
                     </header>
                     <sheet>
