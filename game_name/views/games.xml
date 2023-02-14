@@ -18,7 +18,7 @@
             <field name="inherit_id" ref="purchase.purchase_order_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='currency_id']" position="after">
-                    <field name="order_deadline"/>
+                    <field name="date_order"/>
                     <field name="game_field"/>
                 </xpath>
             </field>
