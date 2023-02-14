@@ -1,6 +1,6 @@
 
 {
-    'name': 'Hospital Management',
+    'name': 'Game name',
     'Version': '1.0.0',
     'summary': 'Hospital Management software',
     'sequence': 100,
