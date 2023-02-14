@@ -7,7 +7,7 @@
     'description': """Hospital Management software""",
     'category': 'productivity',
     'website': "https://www.odoomates.tech",
-    'depends': ['sale'],
+    'depends': ['sale','purshase'],
     'data': [
         # 'security/ir.model.access.csv',
         'views/games.xml',
