@@ -10,7 +10,6 @@ class SaleOrder(models.Model):
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
-    organic = fields.Char(string='Organic')
 
     def link_sale_order(self, purchase_order_id, sale_order_id):
         purchase_order = self.browse(purchase_order_id)
