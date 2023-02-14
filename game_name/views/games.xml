@@ -8,7 +8,9 @@
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='partner_id']" position="after">
-                    <field name="custom_field"/>
+                    <field name="custom_field"  position="attributes">
+                            <attribute name="invisible">False</attribute>
+                    </field>
                 </xpath>
             </field>
         </record>
