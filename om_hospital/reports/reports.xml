@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        id="report_school_profile"
+        string="School Profile"
+        model="school.profile"
+        report_type="qweb-pdf"
+        name="om_hospital.report_school"
+        file="om_hospital.report_school"/>
+</odoo>

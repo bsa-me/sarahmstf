@@ -105,8 +105,7 @@
             sequence="1"/>
     <!--        groups="base.group_user"/>-->
 
-    <function model="school.student" name="_change_roll_number"
-    evaL="('WL',)"/>
+   <!--<function model="school.student" name="_change_roll_number"/>
 
 </odoo>
 
