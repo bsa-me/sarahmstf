@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <report
-        id="report_school_profile"
-        string="School Profile"
-        model="school.profile"
-        report_type="qweb-pdf"
-        name="om_hospital.report_school"
-        file="om_hospital.report_school"/>
+   <record id="report_school_profile" model="ir.actions.report">
+       <field name="name">Student report</field>
+       <field name="model">school.profile</field>
+       <field name="report_type">qweb-pdf</field>
+       <field name="report_name">om_hospital.report_school_profile</field>
+       <field name="report_file">om_hospital.report_school_profile</field>
+       <field name="binging_mode_id" ref="model_school_profile"/>
+       <field name="binging_type">report</field>
+
+
+
+   </record>
 </odoo>
