@@ -2,7 +2,7 @@
 <odoo>
 
    <record id="report_school_profile" model="ir.actions.report">
-       <field name="name">Student report</field>
+       <field name="name">School Profile</field>
        <field name="model">school.profile</field>
        <field name="report_type">qweb-pdf</field>
        <field name="report_name">om_hospital.report_school</field>

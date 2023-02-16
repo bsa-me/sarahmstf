@@ -12,7 +12,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/sara.xml',
-       # 'reports/report.xml',
+        'reports/report.xml',
         'reports/school_profile.xml',
     ],
     'demo': [],
