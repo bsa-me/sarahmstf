@@ -42,12 +42,12 @@ class SchoolProfile(models.Model):
 
     @api.depends('school_rank')
     def _compute_result(self):
-        for record in self :
-            if record.school_rank =="private" :
+        for record in self:
+            if record.school_rank =="private":
                 record.result = 50
-            elif record.school_rank =="public" :
+            elif record.school_rank =="public":
                 record.result = 100
-            else :
+            else:
                 record.result = 0
 
 

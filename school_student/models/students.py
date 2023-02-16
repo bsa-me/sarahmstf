@@ -7,6 +7,7 @@ class school_student(models.Model):
     _description = "schools_student.school_student"
 
     name = fields.Char()
+    roll_number = fields.Char("Roll Number")
     schools_id = fields.Many2one("school.profile", string="Schools Name")
     phone = fields.Char("phone")
     stage = fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')
@@ -44,6 +45,11 @@ class school_student(models.Model):
                 'res_model': 'student.fees.update.wizard',
                 'view_mode': 'form',
                 'target': 'new'}
+    @api.model
+    def _change_roll_number(self, add_string):
+        ##this method is used to add roll number to the student profile
+   for stud in self.search([('roll_number','!=',False)]):
+       stud.roll_number = add_string + "STD" + str(stud.id)
 
 
 class ChildModel(models.Model):
