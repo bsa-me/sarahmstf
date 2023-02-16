@@ -8,14 +8,30 @@
         </t>
     </template>-->
 
-    <template id="report_school">
+    <template id="report_school_profile">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="doc">
-                <t t-call="om_hospital.report_school_profile" />
+                <t t-call="web.external_layout" />
+                  <div class="page">
+                      <div class="oe_structure"/>
+                      <div class="row">
+                          <div class="col-xs-8">
+                              <table class="table table-condensed" style="border: 3 px solid black !important;">
+                                  <tr>
+                                      <td width="40%">
+                                      </td>
+                                      <td width="60%"></td>
+                                  </tr>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+
                 <h2>Test Print</h2>
                 <t t-esc="doc.name"/>
                 <t t-esc="doc.school_age"/>
                 <t t-esc="doc.school_name"/>
+
             </t>
         </t>
     </template>
