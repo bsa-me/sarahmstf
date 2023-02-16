@@ -12,8 +12,8 @@
     'data': [
         'security/ir.model.access.csv',
         'views/sara.xml',
-        'report/report.xml',
         'report/school_profile.xml',
+        'report/report.xml',
     ],
     'demo': [],
     'qweb': [],
