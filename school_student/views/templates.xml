@@ -16,7 +16,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="Roll_number"/>
+<!--                           <field name="Roll_number"/> -->
                             <field name="schools_id" string="Schools"/>
                             <field name="phone" attrs ="{'invisible' : [('name','=',0)],'readonly':[('name','=',1)]}"/>
                             <field name="stage"/>
