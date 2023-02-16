@@ -8,8 +8,7 @@
         </t>
     </template>-->
 
-    <template id="report_school_date
-">
+    <template id="report_school_profile">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="doc">
                 <t t-call="web.external_layout" />
@@ -28,11 +27,11 @@
                       </div>
                   </div>
 
-                <h2>Test Print</h2>
+<!--                 <h2>Test Print</h2>
                 <t t-esc="doc.name"/>
                 <t t-esc="doc.school_age"/>
                 <t t-esc="doc.school_name"/>
-
+ -->
             </t>
         </t>
     </template>
