@@ -7,7 +7,7 @@
        <field name="report_type">qweb-pdf</field>
        <field name="report_name">om_hospital.report_school</field>
        <field name="report_file">om_hospital.report_school</field>
-       <field name="binging_mode_id" ref="model_school_profile"/>
+       <field name="binging_model_id" ref="model_school_profile"/>
        <field name="binging_type">report</field>
 
 
