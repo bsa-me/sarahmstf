@@ -45,11 +45,11 @@ class school_student(models.Model):
                 'res_model': 'student.fees.update.wizard',
                 'view_mode': 'form',
                 'target': 'new'}
-    @api.model
-    def _change_roll_number(self, add_string):
-        ##this method is used to add roll number to the student profile
-   for stud in self.search([('roll_number','!=',False)]):
-       stud.roll_number = add_string + "STD" + str(stud.id)
+#     @api.model
+#     def _change_roll_number(self, add_string):
+#         ##this method is used to add roll number to the student profile
+#    for stud in self.search([('roll_number','!=',False)]):
+#        stud.roll_number = add_string + "STD" + str(stud.id)
 
 
 class ChildModel(models.Model):
