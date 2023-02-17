@@ -22,6 +22,39 @@
                                   </p>
                                       </td>
                                   </tr>
+                                  <td width="60%">
+                                      <table>
+                                          <tr>
+                                              <td colspan="3" class="text-center">
+                                                  <span t-field="o.name"/>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <span>
+                                                      <strong>Age:</strong>
+                                                  </span>
+                                              </td>
+                                              <td>
+                                                  <span t-field="o.age"/>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <span>
+                                                      <strong>Reference:</strong>
+                                                  </span>
+                                              </td>
+                                              <td>
+                                                  <span>:</span>
+                                              </td>
+                                              <td>
+                                                  <span t-field="o.reference"/>
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
                               </table>
                           </div>
                       </div>
