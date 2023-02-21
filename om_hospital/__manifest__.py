@@ -17,6 +17,10 @@
     ],
     'demo': [],
     'qweb': [],
+    'images':[
+        'static/description/icon.png',
+        'static/img/my_image.png',
+    ],
     'installation': True,
     'application': True,
     'auto_install': False,
