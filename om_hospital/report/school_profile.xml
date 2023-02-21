@@ -10,7 +10,7 @@
 <!--                               <img t-if="not doc.image"-->
 <!--                                  t-att-src="'/web/static/src/img/placeholder.png'" height="140"-->
 <!--                                   border="1" width="120"/>-->
-<!--                               <thead>-->
+                             <thead>
                                    <tr>
                                        <th>material  </th>
                                        <th>note  </th>
