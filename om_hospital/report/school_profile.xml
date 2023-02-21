@@ -7,10 +7,13 @@
                 <t t-call="web.external_layout" />
                   <div class="page">
                         <table class="table table-condesed" style="border:3px solid black" >
-<!--                               <img t-if="not doc.image"-->
-<!--                                  t-att-src="'/web/static/src/img/placeholder.png'" height="140"-->
-<!--                                   border="1" width="120"/>-->
-                             <thead>
+                             <img t-if="not doc.image"
+                                t-att-src="'/web/static/src/img/placeholder.png'" height="140"
+                                 border="1" width="120"/>
+                      <img t-if="doc.image"
+                           t-att-src="'data:image/png;base64,%s'% to_text(doc.image)"
+                           height="140" border="1" width="120"/>
+                              <thead>
                                    <tr>
                                        <th>material  </th>
                                        <th>note  </th>
@@ -45,6 +48,8 @@
                                 <li>html</li>
                                 <li>css</li>
                                 <li>jquery</li>
+
+                        </table>
 
 
 
