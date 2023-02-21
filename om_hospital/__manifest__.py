@@ -10,10 +10,7 @@
     'website': "https://www.odoomates.tech",
     'depends': [],
     'data': [
-        'security/ir.model.access.csv',
-        'views/sara.xml',
-        'report/school_profile.xml',
-        'report/report.xml',
+       'data/email_template.xml'
     ],
     'demo': [],
     'qweb': [],
