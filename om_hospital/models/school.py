@@ -1,9 +1,12 @@
+
+
+
+
+
+
+
 from datetime import date
 from odoo import fields, models, api
-
-
-
-
 
 class SchoolProfile(models.Model):
     _name = "school.profile"

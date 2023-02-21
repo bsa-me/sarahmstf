@@ -11,6 +11,8 @@
     'depends': [],
     'data': [
         'views/sara.xml'
+        'report/report.xml'
+        'report/school_profile.xml'
     ],
     'demo': [],
     'qweb': [],
