@@ -11,9 +11,9 @@
     'depends': [],
     'data': [
         'security/ir.model.access.csv',
-        'views/sara.xml'
-        'report/school_profile.xml'
-        'report/report.xml'
+        'views/sara.xml',
+        'report/school_profile.xml',
+        'report/report.xml',
     ],
     'demo': [],
     'qweb': [],
