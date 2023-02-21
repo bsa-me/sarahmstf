@@ -9,9 +9,7 @@
     'category': 'productivity',
     'website': "https://www.odoomates.tech",
     'depends': [],
-    'data': [
-       'data/email_template.xml'
-    ],
+    'data': [],
     'demo': [],
     'qweb': [],
     'installation': True,
