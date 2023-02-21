@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 from datetime import date
 from odoo import fields, models, api
 
