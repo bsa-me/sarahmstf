@@ -13,10 +13,7 @@
                                </div>
 
                 <h2>Test Print</h2>
-<!--                <t t-esc="doc.name"/>-->
-<!--                <t t-esc="doc.school_age"/>-->
-<!--                <t t-esc="doc.school_name"/>-->
-
+                <span t-field="doc.name"/>
 
             </t>
         </t>
