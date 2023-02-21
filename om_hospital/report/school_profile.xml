@@ -6,52 +6,47 @@
             <t t-foreach="docs" t-as="doc">
                 <t t-call="web.external_layout" />
                   <div class="page">
-                      <div class="oe_structure"/>
-                      <div class="row">
-                          <div class="col-xs-8">
-                              <table class="table table-condensed" style="border: 3px solid black;">
+                        <table class="table table-condesed" style="border:3px solid black" >
+
+                               <thead>
+                                   <tr>
+                                       <th>material  </th>
+                                       <th>note  </th>
+                                       <th>coeff  </th>
+
+                                   </tr>
+                                   </thead>
+                                   <tfoot>
+                                       <tr>
+                                           <td colspan="3">Moyenne</td>
+                                           <td>15</td>
+                                       </tr>
+                                   </tfoot>
+                                   <tbody>
+                                       <tr>
+                                           <td>Physics</td>
+                                           <td>15</td>
+                                           <td>3</td>
+                                       </tr>
+                                       <tr>
+                                           <td>info</td>
+                                           <td>16</td>
+                                           <td>2</td>
+                                       </tr>
                                      <tr>
-                                         <td width="60%">
-                                             <table>
-                                                 <tr>
-                                                     <td colspan="3" class="text-center">
-                                                         <span t-field="doc.name"/>
-                                                     </td>
-                                                 </tr>
-                                                 <tr>
-                                                     <td>
-                                                         <span>
-                                                             <stong>Age:</stong>
-                                                         </span>
-                                                     </td>
-                                                     <td>
-                                                         <span>:</span>
-                                                     </td>
-                                                     <td>
-                                                         <span t-field="doc.age"/>
-                                                     </td>
-                                                 </tr>
-                                                 <tr>
-                                                     <td>
-                                                         <span>
-                                                             <strong>Reference:</strong>
-                                                         </span>
-                                                     </td>
-                                                     <td>
-                                                         <span>:</span>
-                                                     </td>
-                                                     <td>
-                                                         <span t-field="doc.reference"/>
-                                                     </td>
-                                                 </tr>
-                                             </table>
-                                         </td>
-                                     </tr>
-                                   </table>
-                                </div>
-                                </div>
-                               <br/>
-            </t>
+                                         <td>maths</td>
+                                         <td>17</td>
+                                         <td>1</td>
+
+                                <li>html</li>
+                                <li>css
+                                <li>jquery</li>
+                                </li>
+
+
+
+                               </div>
+                              </t>
         </t>
     </template>
 </odoo>
