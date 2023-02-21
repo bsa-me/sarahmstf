@@ -7,7 +7,9 @@
                 <t t-call="web.external_layout" />
                   <div class="page">
                         <table class="table table-condesed" style="border:3px solid black" >
-
+<!--                                <img t-if="not doc.image"-->
+<!--                                     t-att-src="'/web/static/src/img/placeholder.png'" height="140"-->
+<!--                                     border="1" width="120"/>-->
                                <thead>
                                    <tr>
                                        <th>material  </th>
@@ -37,11 +39,12 @@
                                          <td>maths</td>
                                          <td>17</td>
                                          <td>1</td>
+                                     </tr>
 
                                 <li>html</li>
-                                <li>css
+                                <li>css</li>
                                 <li>jquery</li>
-                                </li>
+
 
 
 
