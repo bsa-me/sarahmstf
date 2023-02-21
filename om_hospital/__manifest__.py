@@ -9,7 +9,9 @@
     'category': 'productivity',
     'website': "https://www.odoomates.tech",
     'depends': [],
-    'data': [],
+    'data': [
+        'views/sara.xml'
+    ],
     'demo': [],
     'qweb': [],
     'installation': True,
