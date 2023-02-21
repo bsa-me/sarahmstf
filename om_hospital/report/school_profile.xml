@@ -9,12 +9,48 @@
                       <div class="oe_structure"/>
                       <div class="row">
                           <div class="col-xs-8">
+                              <table class="table table-condensed" style="border: 3px solid black;">
+                                     <tr>
+                                         <td width="60%">
+                                             <table>
+                                                 <tr>
+                                                     <td colspan="3" class="text-center">
+                                                         <span t-field="doc.name"/>
+                                                     </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>
+                                                         <span>
+                                                             <stong>Age:</stong>
+                                                         </span>
+                                                     </td>
+                                                     <td>
+                                                         <span>:</span>
+                                                     </td>
+                                                     <td>
+                                                         <span t-field="doc.age"/>
+                                                     </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>
+                                                         <span>
+                                                             <strong>Reference:</strong>
+                                                         </span>
+                                                     </td>
+                                                     <td>
+                                                         <span>:</span>
+                                                     </td>
+                                                     <td>
+                                                         <span t-field="doc.reference"/>
+                                                     </td>
+                                                 </tr>
+                                             </table>
+                                         </td>
+                                     </tr>
+                                   </table>
                                 </div>
-                               </div>
-
-                <h2>Test Print</h2>
-                <span t-field="doc.name"/>
-
+                                </div>
+                               <br/>
             </t>
         </t>
     </template>
