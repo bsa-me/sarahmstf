@@ -21,7 +21,7 @@
                             <field name="stage"/>
                             <field name="total_price"/>
                             <field name="division"/>
-                            <field name="image" widget="image" />
+                            <field name="image" widget="image" width="10" />
                         </group>
                             <notebook>
                                 <page string="Child" name="child">
