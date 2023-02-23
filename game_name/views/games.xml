@@ -10,8 +10,8 @@
         <xpath expr="//field[@name='partner_id']" position="after">
         <field name="custom_field" position="attributes">
             <attribute name="invisible">False</attribute>
-        </field>
         </xpath>
+        </field>
         <field name="somme"/>
     </record>
     <record id="view_purchase_order_inherit" model="ir.ui.view">
