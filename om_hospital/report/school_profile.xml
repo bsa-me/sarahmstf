@@ -26,7 +26,7 @@
                         </tr>
                         <tr>
                             <td>
-                                 <span t-field="doc.adress"/>
+                                 <span t-field="doc.address"/>
                             </td>
                             <td>
                                  <span t-field="doc.gender_type"/>
