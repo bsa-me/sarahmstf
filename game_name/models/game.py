@@ -5,13 +5,12 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     custom_field = fields.Char(string='Custom Field')
+    somme = fields.Float(string='somme', compute='_compute_somme')
 
-    def _compute_order_quantity(self):
-        for record in self:
-            total_qty = 0
-            for line in record.order_line:
-                total_qty += line.product_uom_qty
-            record.order_quantity = total_qty
+    def _compute_somme(self):
+        for order in self:
+            order.somme = sum(line.product_uom_qty for fine in order.order_line)
+
 
 
 

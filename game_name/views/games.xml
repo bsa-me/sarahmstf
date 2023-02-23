@@ -11,6 +11,8 @@
         <field name="custom_field" position="attributes">
             <attribute name="invisible">False</attribute>
         </field>
+        </xpath>
+        <field name="somme"/>
     </record>
     <record id="view_purchase_order_inherit" model="ir.ui.view">
         <field name="name">purchase.order.form.inherit</field>
