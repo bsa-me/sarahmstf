@@ -16,12 +16,23 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-<!--                           <field name="Roll_number"/> -->
+                            <field name="Email"/>
                             <field name="schools_id" string="Schools"/>
                             <field name="phone" attrs ="{'invisible' : [('name','=',0)],'readonly':[('name','=',1)]}"/>
                             <field name="stage"/>
                             <field name="total_price"/>
                             <field name="division"/>
+                            <field name="image" widget="image" />
+                            <notebook>
+                                <page string="Books" name="books">
+                                    <group>
+                                        <field name="chapter"/>
+                                    </group>
+                                </page>
+                                <page string ="Class" name="class">
+                                    <field name="grade7"/>
+                                </page>
+                            </notebook>
                             <field name="child_ids">
                                 <tree editable="bottom">
                                     <field name="number"/>
