@@ -7,7 +7,6 @@ class school_student(models.Model):
     _description = "schools_student.school_student"
 
     name = fields.Char()
-    email = fields.Char("Email")
     schools_id = fields.Many2one("school.profile", string="Schools Name")
     phone = fields.Char("phone")
     stage = fields.Selection([('pending','Pending'),('approved','Approved'),('sold','Sold'),('cancelled','Cancelled'),],default='pending',string='Stage')

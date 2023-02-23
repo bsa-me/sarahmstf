@@ -16,13 +16,13 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="Email"/>
                             <field name="schools_id" string="Schools"/>
-                            <field name="phone" attrs ="{'invisible' : [('name','=',0)],'readonly':[('name','=',1)]}"/>
+                            <field name="phone" />
                             <field name="stage"/>
                             <field name="total_price"/>
                             <field name="division"/>
                             <field name="image" widget="image" />
+                        </group>
                             <notebook>
                                 <page string="Books" name="books">
                                     <group>
@@ -42,7 +42,6 @@
                                     <field name="is_selected"/>
                                 </tree>
                             </field>
-                        </group>
                     </sheet>
                 </form>
             </field>
