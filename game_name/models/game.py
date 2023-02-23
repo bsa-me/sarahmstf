@@ -6,12 +6,19 @@ class SaleOrder(models.Model):
 
     custom_field = fields.Char(string='Custom Field')
 
+    def _compute_order_quantity(self):
+        for record in self:
+            total_qty = 0
+            for line in record.order_line:
+                total_qty += line.product_uom_qty
+            record.order_quantity = total_qty
+
+
 
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
+    sale_order_id = fields.Many2one('sale.order',string='Sale Order')
+
     game_field = fields.Char(string='Game')
 
-    def link_sale_order(self, purchase_order_id, sale_order_id):
-        purchase_order = self.browse(purchase_order_id)
-        purchase_order.write({'sale_order_id': sale_order_id})

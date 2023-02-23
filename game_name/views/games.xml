@@ -2,31 +2,28 @@
 <odoo>
 
 
-        <record id="view_order_form" model="ir.ui.view">
-            <field name="name">sale.order.form</field>
-            <field name="model">sale.order</field>
-            <field name="inherit_id" ref="sale.view_order_form"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='partner_id']" position="after">
-                    <field name="custom_field"  position="attributes">
-                            <attribute name="invisible">False</attribute>
-                    </field>
-                </xpath>
-            </field>
-        </record>
-            <record id="purchase_order_form_view" model="ir.ui.view">
-            <field name="name">purchase.order.form</field>
-            <field name="model">purchase.order</field>
-            <field name="inherit_id" ref="purchase.purchase_order_form"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='currency_id']" position="after">
-                    <field name="date_order"/>
-                    <field name="game_field"/>
-                </xpath>
-            </field>
-        </record>
-
-
+    <record id="view_sale_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='partner_id']" position="after">
+        <field name="custom_field" position="attributes">
+            <attribute name="invisible">False</attribute>
+        </field>
+    </record>
+    <record id="view_purchase_order_inherit" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='currency_id']" position="after">
+                <field name="sale_order_id"/>
+                <field name="date_order"/>
+                <field name="game_field"/>
+            </xpath>
+        </field>
+    </record>
 
 
 </odoo>
