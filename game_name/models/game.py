@@ -9,7 +9,7 @@ class SaleOrder(models.Model):
 
     def _compute_somme(self):
         for order in self:
-            order.somme = sum(line.product_uom_qty for fine in order.order_line)
+            order.somme = sum(line.product_uom_qty for line in order.order_line)
 
 
 
