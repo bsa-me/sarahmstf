@@ -14,10 +14,10 @@
 <!--                             src="https://th.bing.com /th/id/R.1af3b0033644a60b844ee5abdcca8900?rik=HODvUGpz4KyXtw&amp;pid=ImgRaw&amp;r=0"/>-->
                         <tr>
                             <td>
-                               <span t-field="doc.name"/>
+                               <span t-field="o.name"/>
                             </td>
                             <td>
-                                <span t-field="doc.email"/>
+                                <span t-field="o.email"/>
                             </td>
 
                         </tr>
