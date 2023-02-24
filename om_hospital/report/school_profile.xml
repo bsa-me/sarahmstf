@@ -2,11 +2,13 @@
 <odoo>
 
     <template id="report_school_profile">
-        <t t-foreach="docs" t-as="doc">
-            <t t-call="web.html_container">
-                <t t-call="web.external_layout"/>
+        <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
                 <div class="page">
                     <div class="oe_structure"/>
+                    <div class="row">
+                        <div class="col-xs-8">
                     <table class="table table-condensed" style="border:3px solid black">
 <!--                        <img style="display: none"-->
 <!--                             src="https://th.bing.com /th/id/R.1af3b0033644a60b844ee5abdcca8900?rik=HODvUGpz4KyXtw&amp;pid=ImgRaw&amp;r=0"/>-->
@@ -38,7 +40,10 @@
 
 
                 </div>
+                    </div>
+                </div>
             </t>
+         </t>
         </t>
     </template>
 </odoo>
