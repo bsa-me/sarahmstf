@@ -3,7 +3,7 @@
 
     <template id="report_school_profile">
         <t t-call="web.html_container">
-        <t t-foreach="docs" t-as="o">
+<!--        <t t-foreach="docs" t-as="o">-->
                 <t t-call="web.external_layout">
                 <div class="page">
                     <div class="oe_structure"/>
@@ -12,30 +12,22 @@
                     <table class="table table-condensed" style="border:3px solid black">
 <!--                        <img style="display: none"-->
 <!--                             src="https://th.bing.com /th/id/R.1af3b0033644a60b844ee5abdcca8900?rik=HODvUGpz4KyXtw&amp;pid=ImgRaw&amp;r=0"/>-->
+                      <thead>
                         <tr>
-                            <td>
-                               <span t-field="o.name"/>
-                            </td>
-                            <td>
-                                <span t-field="o.email"/>
-                            </td>
-
+                            <th>Name</th>
+                            <th>Eamil</th>
+                            <th>Phone</th>
                         </tr>
-                        <tr>
-                            <td colspan="3">
-                                <span t-field ="doc.phone"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                 <span t-field="doc.address"/>
-                            </td>
-                            <td>
-                                 <span t-field="doc.gender_type"/>
-                            </td>
-
-                        </tr>
-
+                      </thead>
+                        <tbody>
+                            <t t-foreach="records" t-as="record">
+                                <tr>
+                                    <td><t t-esc="record.name"/></td>
+                                    <td><t t-esc="record.email"/></td>
+                                    <td><t t-esc="record.phone"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
                     </table>
 
 
