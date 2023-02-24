@@ -21,20 +21,20 @@
                             </td>
 
                         </tr>
-<!--                        <tr>-->
-<!--                            <td colspan="3">-->
-<!--                                <span t-field ="doc.phone"/>-->
-<!--                            </td>-->
-<!--                        </tr>-->
-<!--                        <tr>-->
-<!--                            <td>-->
-<!--                                 <span t-field="doc.address"/>-->
-<!--                            </td>-->
-<!--                            <td>-->
-<!--                                 <span t-field="doc.gender_type"/>-->
-<!--                            </td>-->
+                        <tr>
+                            <td colspan="3">
+                                <span t-field ="doc.phone"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                 <span t-field="doc.address"/>
+                            </td>
+                            <td>
+                                 <span t-field="doc.gender_type"/>
+                            </td>
 
-<!--                        </tr>-->
+                        </tr>
 
                     </table>
 
