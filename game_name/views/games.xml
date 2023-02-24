@@ -13,6 +13,14 @@
         </xpath>
         </field>
     </record>
+    <record id="sale.action_orders" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+    </record>
+
+    <record id="sale.menu_sale_quotations" model="ir.ui.menu">
+        <field name="name">New Quotation</field>
+    </record>
+
     <record id="view_purchase_order_inherit" model="ir.ui.view">
         <field name="name">purchase.order.form.inherit</field>
         <field name="model">purchase.order</field>
