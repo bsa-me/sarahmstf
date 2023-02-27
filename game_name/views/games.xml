@@ -12,7 +12,7 @@
             <field name="somme"/>
             <fied name="saleordercount"/>
             <button name="createsaleorder" string="createsaleorder" type="object" class="btn-primary" />
-            <field name="partnerid"/>
+            <field name="partner_id"/>
         </xpath>
         </field>
     </record>
