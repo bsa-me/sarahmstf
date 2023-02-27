@@ -15,8 +15,8 @@ class SaleOrder(models.Model):
             order.somme = sum(line.product_uom_qty for line in order.order_line)
 
     @api.depends('partner_id')
-   def _compute_saleordercount(self):
-    for record in self:
+    def _compute_saleordercount(self):
+      for record in self:
         saleordercount = self.env['sale.order'].search_count([('partner_id','=',record.partner_id.id)])
         record.saleordercount = saleordercount
 
