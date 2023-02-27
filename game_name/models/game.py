@@ -20,4 +20,5 @@ class PurchaseOrder(models.Model):
     sale_order_id = fields.Many2one('sale.order',string='Sale Order')
 
     game_field = fields.Char(string='Game')
+    
 
