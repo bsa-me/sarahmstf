@@ -64,7 +64,7 @@
                             <field name="is_teenager"/>
                             <field name="is_virtual_class" string="This is override field" readonly="0"/>
                             <field name="sale_order_count"/>
-                            <field name="customer_id"
+                            <field name="customer_id"/>
                             <field name="school_rank"/>
                             <field name="result" string="School Result"/>
                             <field name="address"/>
