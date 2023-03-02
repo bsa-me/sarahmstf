@@ -1,12 +1,6 @@
-
-
-
-
-
-
-
 from datetime import date
 from odoo import fields, models, api
+
 
 class SchoolProfile(models.Model):
     _name = "school.profile"
@@ -20,11 +14,11 @@ class SchoolProfile(models.Model):
     is_teenager = fields.Char(string="Teenager?", compute='_compute_is_teenager')
     is_virtual_class = fields.Boolean(string="Virtual Class Support?", readonly="True")
     sale_order_count = fields.Integer(string="Sale Order Count")
-    customer_id = fields.Many2one('res.partner',strinng='Customer')
+    customer_id = fields.Many2one('res.partner', strinng='Customer')
 
-
-    school_rank = fields.Selection([('public','Public School'), ('private','Private School')], string="Type of school")
-    result = fields.Float(compute='_compute_result',string="result")
+    school_rank = fields.Selection([('public', 'Public School'), ('private', 'Private School')],
+                                   string="Type of school")
+    result = fields.Float(compute='_compute_result', string="result")
     address = fields.Text(string="Address")
     documents = fields.Binary(string="Documents")
     document_name = fields.Char(string="File Name")
@@ -52,19 +46,18 @@ class SchoolProfile(models.Model):
     @api.depends('school_rank')
     def _compute_result(self):
         for record in self:
-            if record.school_rank =="private":
+            if record.school_rank == "private":
                 record.result = 50
-            elif record.school_rank =="public":
+            elif record.school_rank == "public":
                 record.result = 100
             else:
                 record.result = 0
 
-     def create_sale_orders(self) :
-         SaleOrder = self.env['sale.order']
-         for record in self:
-             customer_id = record.customer_id.id
-             sale_order_count = record.sale_order_count
-             for i in range(sale_order_count) :
-                 SaleOrder.create({'partner_id': customer_id})
-         return True
-
+    def create_sale_orders(self):
+        SaleOrder = self.env['sale.order']
+        for record in self:
+            customer_id = record.customer_id.id
+            sale_order_count = record.sale_order_count
+            for i in range(sale_order_count):
+                SaleOrder.create({'partner_id': customer_id})
+        return True
