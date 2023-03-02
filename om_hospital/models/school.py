@@ -19,6 +19,9 @@ class SchoolProfile(models.Model):
     date_of_birth = fields.Date(string='Date_of_Birth')
     is_teenager = fields.Char(string="Teenager?", compute='_compute_is_teenager')
     is_virtual_class = fields.Boolean(string="Virtual Class Support?", readonly="True")
+    sale_order_count = fields.Integer(string="Sale Order Count")
+    customer_id = fields.Many2one('res.partner',strinng='Customer')
+
 
     school_rank = fields.Selection([('public','Public School'), ('private','Private School')], string="Type of school")
     result = fields.Float(compute='_compute_result',string="result")
@@ -56,4 +59,12 @@ class SchoolProfile(models.Model):
             else:
                 record.result = 0
 
+     def create_sale_orders(self) :
+         SaleOrder = self.env['sale.order']
+         for record in self:
+             customer_id = record.customer_id.id
+             sale_order_count = record.sale_order_count
+             for i in range(sale_order_count) :
+                 SaleOrder.create({'partner_id': customer_id})
+         return True
 

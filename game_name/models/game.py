@@ -6,20 +6,18 @@ class SaleOrder(models.Model):
 
     custom_field = fields.Char(string='Custom Field')
     somme = fields.Float(string='Somme', compute='_compute_somme')
-    saleordercount = fields.Integer(string='Sale Order Count', compute='_compute_saleordercount')
-    partner_id = fields.Many2one('res.partner', string='partner')
+    school_profile_id = fields.Many2one('school.profile', string='School Profile')
 
 
     def _compute_somme(self):
         for order in self:
             order.somme = sum(line.product_uom_qty for line in order.order_line)
 
-    @api.depends('partner_id')
-    def _compute_saleordercount(self):
-      for record in self:
-        saleordercount = self.env['sale.order'].search_count([('partner_id','=',record.partner_id.id)])
-        record.saleordercount = saleordercount
-
+    def create(self, vals):
+        res = super(SaleOrder, self).create(vals)
+        school_profile = self.env['school.profile'].search([], limit=1)
+        res.update({'school_profile_id': school_profile.id})
+        return res
 
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'

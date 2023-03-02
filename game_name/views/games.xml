@@ -10,8 +10,7 @@
         <xpath expr="//field[@name='partner_id']" position="after">
             <field name="custom_field"/>
             <field name="somme"/>
-            <fied name="saleordercount"/>
-            <field name="partner_id"/>
+            <field name="school_profie_id"/>
         </xpath>
         </field>
     </record>

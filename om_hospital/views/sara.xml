@@ -63,6 +63,8 @@
                         <group>
                             <field name="is_teenager"/>
                             <field name="is_virtual_class" string="This is override field" readonly="0"/>
+                            <field name="sale_order_count"/>
+                            <field name="customer_id"
                             <field name="school_rank"/>
                             <field name="result" string="School Result"/>
                             <field name="address"/>
@@ -71,6 +73,7 @@
                     <group>
                         <group>
                             <button name="your_button_action" string="Button Title" type="object" class="btn-primary"/>
+                            <button name="create_sale_orders" string="Create Sale Orders" type="object" class="btn-primary"/>
                             <field name="documents" filename="document_name"/>
                             <field name="document_name"/>
                         </group>
