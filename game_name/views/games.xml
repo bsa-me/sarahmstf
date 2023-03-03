@@ -10,7 +10,7 @@
         <xpath expr="//field[@name='partner_id']" position="after">
             <field name="custom_field"/>
             <field name="somme"/>
-            <field name="school_profie_id"/>
+           <field name="school_profile_id"/>
         </xpath>
         </field>
     </record>
@@ -35,5 +35,17 @@
         </field>
     </record>
 
+    <record id="product_product_template_only_form_view_inherit" model="ir.ui.view">
+        <field name="name">product.template.product.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="price_count" visible="1"/>
+            </xpath>
+
+        </field>
+    </record>
 
 </odoo>
+
